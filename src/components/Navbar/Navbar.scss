@@ -1,0 +1,17 @@
+.app__navbar{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    .app__navbar-logo{
+        img{
+            width: 240px;
+        }
+    }
+    .app__navbar-links{
+        display: flex;
+        margin-right: 0.7rem;
+        gap: 1.5rem;
+    }
+}
