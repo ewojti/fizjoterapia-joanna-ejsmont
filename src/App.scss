@@ -1,3 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,700;1,700&family=Inter:wght@400;700;800&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,600;0,700;1,200;1,400&display=swap');
+@import "utilities/variables";
+
+// $--ff-inter: 'Inter', sans-serif;
+// $--ff-barlow: 'Barlow Condensed', sans-serif;
+// $--ff-cormorant: 'Cormorant', serif;
+
+// $--fw-extraLight: 200;
+// $--fw-light: 300;
+// $--fw-regular: 400;
+// $--fw-semiBold: 400;
+// $--fw-bold: 700;
+// $--fw-extraBold: 800;
+
+// $--clr-black: #1D1E22;
+// $--clr-grey: #9F9F9F;
+// $--clr-light: #FFFFFF;
+// $--clr-green: #FF8E5E;
+
+// $--fs-h1: 3.5rem;
+// $--fs-h2: 2.25rem;
+// $--fs-h3: 1rem;
+// $--fs-h4: 0.8rem;
+// $--fs-body: 1.25rem;
+
+// $--fs-h1-mobile: 3rem;
+// $--fs-h2-mobile: 2.25rem;
+// $--fs-h3-mobile: 1.5rem;
+// $--fs-body-mobile: 1.1rem;
+
+html, body{
+  font-family: $--ff-inter;
+  background-color: var($--clr-light);
+}
+
 .section__padding {
   padding: 4rem 6rem;
 }
@@ -51,20 +86,38 @@
   width: 80%;
 }
 
+.app__heading-h1 {
+    font-family: $--ff-cormorant;
+    font-size: $--fs-h1;
+    font-weight: $--fw-regular;
+    background: -webkit-radial-gradient(#676767, #D3D4D4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.app__heading-h3{
+  font-family: $--ff-cormorant;
+    font-size: $--fs-h3;
+    font-weight: $--fw-regular;
+}
+
 .custom__button {
-  background-color: var(--color-crimson);
-    color: var(--color-black);
+    background: #0f8a70;
+    color: $--clr-light;
     font-family: var(--font-base);
     font-weight: 700;
     letter-spacing: 0.04em;
     line-height: 28px;
     font-size: 16px;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 2rem;
     border-radius: 1px;
+    border-radius: 0.5rem;
     border: none;
     outline: none;
     cursor: pointer;
 }
+
+
 
 .p__cormorant {
   font-family: var(--font-base);
@@ -77,11 +130,9 @@
   font-size: 23px;
 }
 
-.p__opensans {
-  font-family: var(--font-alt);
-  color: var(--color-white);
+.p__inter {
+  font-family: var($--ff-inter);
   font-weight: 400;
-  letter-spacing: 0.04em;
   text-transform: capitalize;
   line-height: 28px;
   font-size: 16px;
@@ -94,10 +145,6 @@
   line-height: 83.2px;
   letter-spacing: 0.04em;
   text-transform: capitalize;
-}
-
-.spoon__img {
-  width: 45px;
 }
 
 @media screen and (min-width: 2000px) {

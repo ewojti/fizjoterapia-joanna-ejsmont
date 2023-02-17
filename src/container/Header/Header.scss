@@ -1,4 +1,28 @@
+@import "utilities/variables";
+
 .app__header{
     height: 700px;
-    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    .app__header-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+         align-items: flex-start;
+        width: 40%;
+    }
+    .app__header-img{
+        position: relative;
+        left: 6rem;
+        bottom: 4rem;
+        height: 700px;
+        img{
+            max-width: 900px;
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 30% 100%);
+
+        }
+    }
 }
