@@ -95,6 +95,15 @@ html, body{
     -webkit-text-fill-color: transparent;
 }
 
+.app__heading-h2{
+    font-family: $--ff-cormorant;
+    font-size: $--fs-h2;
+    font-weight: $--fw-regular;
+    background: -webkit-radial-gradient(#676767, #D3D4D4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .app__heading-h3{
   font-family: $--ff-cormorant;
     font-size: $--fs-h3;

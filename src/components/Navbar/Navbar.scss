@@ -13,14 +13,17 @@
     
     .app__navbar-logo{
         img{
-            width: 280px;
+            max-width: 300px;
+            width: 100%;
         }
     }
     .app__navbar-links{
         display: flex;
         margin-right: 0.7rem;
         gap: 3rem;
+        font-size: $--fs-body;
         color: $--clr-grey;
+        letter-spacing: 0.1rem;
         span:hover{
             color: $--clr-green;
         }

@@ -3,6 +3,15 @@ import header from "../assets/header.jpg";
 import stopy from "../assets/stopy.jpg";
 import logo_header from "../assets/logo_header.jpg";
 import logo_faq from "../assets/logo_faq.png";
+import brain from "../assets/brain.png"
+import children from "../assets/children.png"
+import foot_massage from "../assets/foot_massage.png"
+import house from "../assets/house.png"
+import massage from "../assets/massage.png"
+import mother from "../assets/mother.png"
+import muscle_pain from "../assets/muscle_pain.png"
+import rehabilitation from "../assets/rehabilitation.png"
+import wrist from "../assets/wrist.png"
 
 export default {
   aboutme,
@@ -10,4 +19,13 @@ export default {
   stopy,
   logo_header,
   logo_faq,
+  brain,
+  children,
+  foot_massage,
+  house,
+  massage,
+  mother,
+  muscle_pain,
+  rehabilitation,
+  wrist
 };
