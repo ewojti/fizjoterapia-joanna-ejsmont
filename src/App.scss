@@ -126,7 +126,11 @@ html, body{
     cursor: pointer;
 }
 
-
+@mixin gradient($color_first, $color_second){
+    background: -webkit-radial-gradient($color_first, $color_second);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .p__cormorant {
   font-family: var(--font-base);
