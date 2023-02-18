@@ -19,7 +19,7 @@ const Services = () => {
               <h2 className="app__heading-h2">{service.title}</h2>
               <ul>
                 {service.types.map((type) => (
-                  <li>{type}</li>
+                  <li className='p__inter'>{type}</li>
                 ))}
               </ul>
             </div>
