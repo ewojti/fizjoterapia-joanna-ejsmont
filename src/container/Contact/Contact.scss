@@ -1,0 +1,19 @@
+@import "utilities/variables";
+
+.app__contact {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: $--clr-light;
+  background-color: $--clr-black;
+  .app__contact-map {
+    max-width: 500px;
+    width: 100%;
+    height: 500px;
+    border: none;
+  }
+  .app__contact-info {
+    max-width: 500px;
+    width: 100%;
+  }
+}
