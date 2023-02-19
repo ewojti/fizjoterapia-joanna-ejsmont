@@ -9,12 +9,19 @@ const Blog = () => {
       <div className="app__blog-posts">
         {blogData.map((post) => (
           <div className="app__blog-post">
-            <h3>{post.title}</h3>
-            <p>{post.description}</p>
-            <p>{post.date}</p>
+            <div className="app__blog-post-text">
+              <h3>{post.title}</h3>
+              <p>{post.description}</p>
+            </div>
+            <div className="app__blog-post-date">
+              <p>{post.date}</p>
+            </div>
           </div>
         ))}
       </div>
+      <button className="app__blog-button p__inter">
+        Zobacz wszystkie posty
+      </button>
     </div>
   );
 };
