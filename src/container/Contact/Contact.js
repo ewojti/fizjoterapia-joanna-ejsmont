@@ -41,21 +41,6 @@ const Contact = () => {
           </span>
           <p className="p__inter">fizjoterapia.ejsmont@gmail.com</p>
         </div>
-        <div>
-          <span className="app__react-icons">
-            <MdPayment />
-          </span>
-          <p className="p__inter">
-            DANE DO PRZELEWU: <br />
-            Joanna Ejsmont <br />
-            Fizjoterapia Joanna Ejsmont <br />
-            ul. Osiedle Centrum 21, <br />
-            16-100 Sokółka <br />
-            Nr konta: 11 1111 1111 1111 1111 1111 <br />
-            Nip: 5451823611 <br />
-            Regon: 389360903
-          </p>
-        </div>
       </div>
       <div className="app__contact-map">
         <iframe

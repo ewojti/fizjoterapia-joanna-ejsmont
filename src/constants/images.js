@@ -2,7 +2,7 @@ import aboutme from "../assets/aboutme.jpg";
 import header from "../assets/header.jpg";
 import stopy from "../assets/stopy.jpg";
 import logo_header from "../assets/logo_header.jpg";
-import logo_faq from "../assets/logo_faq.png";
+import logo_footer from "../assets/logo_footer.png";
 import brain from "../assets/brain.png"
 import children from "../assets/children.png"
 import foot_massage from "../assets/foot_massage.png"
@@ -18,7 +18,7 @@ export default {
   header,
   stopy,
   logo_header,
-  logo_faq,
+  logo_footer,
   brain,
   children,
   foot_massage,
@@ -27,5 +27,5 @@ export default {
   mother,
   muscle_pain,
   rehabilitation,
-  wrist
+  wrist,
 };

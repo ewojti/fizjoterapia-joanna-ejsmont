@@ -77,7 +77,6 @@ html, body{
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-left: 2rem;
 }
 
@@ -128,6 +127,11 @@ html, body{
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+.policy__link{
+  font-size: 0.6rem;
+  color: $--clr-grey;
 }
 
 @mixin gradient($color_first, $color_second){
