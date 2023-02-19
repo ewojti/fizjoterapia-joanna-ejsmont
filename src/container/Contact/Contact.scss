@@ -11,9 +11,29 @@
     width: 100%;
     height: 500px;
     border: none;
+    align-self: center;
   }
   .app__contact-info {
     max-width: 500px;
     width: 100%;
-  }
+    align-self: center;
+    
+    h1{
+      margin-bottom: 2rem;
+    }
+    div{
+      display: flex;
+      margin-bottom: 2rem;
+      
+      span{
+        margin-right: 2rem;
+        align-self: center;
+      }
+      p{
+        color: $--clr-grey;
+        font-size: 1.6rem;
+      }
+
+    }
+    }
 }

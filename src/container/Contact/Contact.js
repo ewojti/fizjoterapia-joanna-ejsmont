@@ -1,31 +1,61 @@
 import React from "react";
 import "./Contact.scss";
-import { GrPhone, GrLocation } from "react-icons/gr";
-import { BsFacebook } from "react-icons/bs";
+import { GrMail } from "react-icons/gr";
+import { HiPhone } from "react-icons/hi";
+import { ImLocation2 } from "react-icons/im";
+import { RiTimeFill } from "react-icons/ri";
+import { MdPayment } from "react-icons/md";
 
 const Contact = () => {
-
   return (
     <div className="app__contact section__padding">
       <div className="app__contact-info">
         <h1 className="app__heading-h1">Kontakt</h1>
-        <p className="p__inter">
-          <GrLocation />
-          Osiedle Centrum 21, Sokółka 16-100
-        </p>
-        <p className="p__inter">
-          <GrPhone />
-          793 183 080
-        </p>
-        <p className="p__inter">
-          <GrPhone />
-          pon - pt: 8.00-18.00 sob: 8:00-14:00
-        </p>
-        <p className="p__inter">
-          <GrPhone />
-          fizjoterapia.ejsmont@gmail.com
-        </p>
-        <p><BsFacebook /></p>
+        <div>
+          <span className="app__react-icons">
+            <ImLocation2 />
+          </span>
+          <p className="p__inter">
+            Osiedle Centrum 21,
+            <br /> 16-100 Sokółka
+          </p>
+        </div>
+        <div>
+          <span className="app__react-icons">
+            <HiPhone />
+          </span>
+          <p className="p__inter">793-183-080</p>
+        </div>
+        <div>
+          <span className="app__react-icons">
+            <RiTimeFill />
+          </span>
+          <p className="p__inter">
+            pon - pt: 8.00-18.00 <br />
+            sob: 8:00-14:00
+          </p>
+        </div>
+        <div>
+          <span className="app__react-icons">
+            <GrMail />
+          </span>
+          <p className="p__inter">fizjoterapia.ejsmont@gmail.com</p>
+        </div>
+        <div>
+          <span className="app__react-icons">
+            <MdPayment />
+          </span>
+          <p className="p__inter">
+            DANE DO PRZELEWU: <br />
+            Joanna Ejsmont <br />
+            Fizjoterapia Joanna Ejsmont <br />
+            ul. Osiedle Centrum 21, <br />
+            16-100 Sokółka <br />
+            Nr konta: 11 1111 1111 1111 1111 1111 <br />
+            Nip: 5451823611 <br />
+            Regon: 389360903
+          </p>
+        </div>
       </div>
       <div className="app__contact-map">
         <iframe
