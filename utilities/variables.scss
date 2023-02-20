@@ -1,7 +1,10 @@
-$--ff-inter: 'Inter', sans-serif;
-$--ff-barlow: 'Barlow Condensed', sans-serif;
-$--ff-cormorant: 'Cormorant', serif;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,700;1,700&family=Inter:wght@400;700;800&family=Lato:wght@100;300&display=swap');
 
+$--ff-inter: "Inter", sans-serif;
+$--ff-lato: 'Lato', sans-serif;
+$--ff-cormorant: "Cormorant", serif;
+
+$--fw-thin: 100;
 $--fw-extraLight: 200;
 $--fw-light: 300;
 $--fw-regular: 400;
@@ -10,17 +13,18 @@ $--fw-bold: 700;
 $--fw-extraBold: 800;
 
 $--clr-black: #2d2d2d;
-$--clr-grey: #9F9F9F;
-$--clr-light: #FFFFFF;
+$--clr-grey: #9f9f9f;
+$--clr-light: #ffffff;
 $--clr-green: #0f8a70;
 
 $--fs-h1: 3.5rem;
 $--fs-h2: 2.4rem;
 $--fs-h3: 1.7rem;
 $--fs-h4: 0.8rem;
-$--fs-body: 1.25rem;
+$--fs-body: 1.3rem;
 
 $--fs-h1-mobile: 3rem;
 $--fs-h2-mobile: 2.25rem;
 $--fs-h3-mobile: 1.5rem;
-$--fs-body-mobile: 1.1rem;
+$--fs-body-mobile: 0.9rem;
+
