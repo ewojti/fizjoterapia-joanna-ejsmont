@@ -1,33 +1,36 @@
-import React from 'react'
-import './Navbar.scss'
+import React from "react";
+import "./Navbar.scss";
 import { Link } from "react-router-dom";
-import images from '../../constants/images'
+import images from "../../constants/images";
 
 const Navbar = () => {
   return (
     <div className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logo_header} alt="navbar logo fizjoterapia" />
+        <img className="app__navbar-logo-desktop" src={images.logo_header} alt="navbar logo fizjoterapia" />
+        <img className="app__navbar-logo-mobile" src={images.logo_footer} alt="navbar logo fizjoterapia" />
       </div>
       <div className="app__navbar-links p__inter">
-        <span>
-          <Link to="">O mnie</Link>
-        </span>
-        <span>
-          <Link to="">Usługi</Link>
-        </span>
-        <span>
-          <Link to="">Blog</Link>
-        </span>
-        <span>
-          <Link to="">Kontakt</Link>
-        </span>
-        <span>
-          <Link to="">Cennik</Link>
-        </span>
+        <ul>
+          <li>
+            <Link to="">O mnie</Link>
+          </li>
+          <li>
+            <Link to="">Usługi</Link>
+          </li>
+          <li>
+            <Link to="">Blog</Link>
+          </li>
+          <li>
+            <Link to="">Kontakt</Link>
+          </li>
+          <li>
+            <Link to="">Cennik</Link>
+          </li>
+        </ul>
       </div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;

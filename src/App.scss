@@ -1,40 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,700;1,700&family=Inter:wght@400;700;800&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,600;0,700;1,200;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,700;1,700&family=Inter:wght@400;700;800&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,600;0,700;1,200;1,400&display=swap");
 @import "utilities/variables";
 
-// $--ff-inter: 'Inter', sans-serif;
-// $--ff-barlow: 'Barlow Condensed', sans-serif;
-// $--ff-cormorant: 'Cormorant', serif;
-
-// $--fw-extraLight: 200;
-// $--fw-light: 300;
-// $--fw-regular: 400;
-// $--fw-semiBold: 400;
-// $--fw-bold: 700;
-// $--fw-extraBold: 800;
-
-// $--clr-black: #1D1E22;
-// $--clr-grey: #9F9F9F;
-// $--clr-light: #FFFFFF;
-// $--clr-green: #FF8E5E;
-
-// $--fs-h1: 3.5rem;
-// $--fs-h2: 2.25rem;
-// $--fs-h3: 1rem;
-// $--fs-h4: 0.8rem;
-// $--fs-body: 1.25rem;
-
-// $--fs-h1-mobile: 3rem;
-// $--fs-h2-mobile: 2.25rem;
-// $--fs-h3-mobile: 1.5rem;
-// $--fs-body-mobile: 1.1rem;
-
-html, body{
+html,
+body {
   font-family: $--ff-inter;
   background-color: var($--clr-light);
 }
 
 .section__padding {
-  padding: 4rem 6rem;
+  padding: 1rem 2rem;
 }
 
 .flex__center {
@@ -44,7 +18,7 @@ html, body{
 }
 
 .app__bg-separator {
-  background-image: url('./assets/cwiczenia.jpg');
+  background-image: url("./assets/cwiczenia.jpg");
   background-color: $--clr-black;
   opacity: 0.5;
   background-position: top;
@@ -90,54 +64,54 @@ html, body{
 }
 
 .app__heading-h1 {
-    font-family: $--ff-cormorant;
-    font-size: $--fs-h1;
-    font-weight: $--fw-regular;
-    background: -webkit-radial-gradient(#676767, #D3D4D4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.app__heading-h2{
-    font-family: $--ff-cormorant;
-    font-size: $--fs-h2;
-    font-weight: $--fw-regular;
-    background: -webkit-radial-gradient(#676767, #D3D4D4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.app__heading-h3{
   font-family: $--ff-cormorant;
-    font-size: $--fs-h3;
-    font-weight: $--fw-regular;
+  font-size: $--fs-h1;
+  font-weight: $--fw-regular;
+  background: -webkit-radial-gradient(#676767, #d3d4d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.app__heading-h2 {
+  font-family: $--ff-cormorant;
+  font-size: $--fs-h2;
+  font-weight: $--fw-regular;
+  background: -webkit-radial-gradient(#676767, #d3d4d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.app__heading-h3 {
+  font-family: $--ff-cormorant;
+  font-size: $--fs-h3;
+  font-weight: $--fw-regular;
 }
 
 .custom__button {
-    background: #0f8a70;
-    color: $--clr-light;
-    font-family: var(--font-base);
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    line-height: 28px;
-    font-size: 16px;
-    padding: 0.5rem 2rem;
-    border-radius: 1px;
-    border-radius: 0.5rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
+  background: #0f8a70;
+  color: $--clr-light;
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  padding: 0.5rem 2rem;
+  border-radius: 1px;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-.policy__link{
+.policy__link {
   font-size: 0.6rem;
   color: $--clr-grey;
 }
 
-@mixin gradient($color_first, $color_second){
-    background: -webkit-radial-gradient($color_first, $color_second);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+@mixin gradient($color_first, $color_second) {
+  background: -webkit-radial-gradient($color_first, $color_second);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .p__cormorant {
@@ -146,7 +120,7 @@ html, body{
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: capitalize;
-  font-feature-settings: 'tnum' on, 'lnum' on;
+  font-feature-settings: "tnum" on, "lnum" on;
   line-height: 29.9px;
   font-size: 23px;
 }
@@ -168,9 +142,37 @@ html, body{
   text-transform: capitalize;
 }
 
-.app__react-icons{
+.app__react-icons {
   font-size: 2rem;
   color: $--clr-green;
+}
+
+@media screen and (min-width: 850px) {
+  .section__padding {
+    padding: 4rem 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section__padding {
+    padding: 4rem 6rem;
+  }
+
+  .app__wrapper {
+    flex-direction: column;
+  }
+
+  .app__wrapper_img {
+    margin: 5rem 0 0 0;
+  }
+  
+  .app__wrapper_img-reverse {
+    margin: 0 0 5rem 0;
+  }
+  
+  .app__wrapper_img img {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 2000px) {
@@ -192,58 +194,5 @@ html, body{
 
   .spoon__img {
     width: 80px;
-  }
-}
-
-@media screen and (max-width: 1150px) {
-  .app__wrapper {
-    flex-direction: column;
-  }
-
-  .app__wrapper_img {
-    margin: 5rem 0 0 0;
-  }
-
-  .app__wrapper_img-reverse {
-    margin: 0 0 5rem 0;
-  }
-
-  .app__wrapper_img img {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .section__padding {
-    padding: 4rem;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .section__padding {
-    padding: 4rem 2rem;
-  }
-  
-  .p__cormorant {
-    font-size: 21px;
-  }
-
-  .p__opensans {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .p__opensans {
-    font-size: 12px;
-  }
-
-  .p__cormorant {
-    font-size: 19px;
-  }
-
-  .headtext__cormorant {
-    font-size: 45px;
-    line-height: 70px;
   }
 }
