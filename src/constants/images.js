@@ -1,6 +1,8 @@
 import aboutme from "../assets/aboutme.jpg";
 import header from "../assets/header.jpg";
+import headerMob from "../assets/headerMob.jpg";
 import stopy from "../assets/stopy.jpg";
+import cwiczenia from "../assets/cwiczenia.jpg";
 import logo_header from "../assets/logo_header.jpg";
 import logo_footer from "../assets/logo_footer.png";
 import brain from "../assets/brain.png"
@@ -14,6 +16,7 @@ import rehabilitation from "../assets/rehabilitation.png"
 import wrist from "../assets/wrist.png"
 
 export default {
+  cwiczenia,
   aboutme,
   header,
   stopy,
@@ -23,6 +26,7 @@ export default {
   children,
   foot_massage,
   house,
+  headerMob,
   massage,
   mother,
   muscle_pain,

@@ -37,7 +37,7 @@
     }
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 850px) {
     .app__navbar{
         .app__navbar-logo {
             .app__navbar-logo-desktop {
@@ -48,6 +48,12 @@
                 display: none;
             }
         }
+}
+}
+
+
+@media all and (min-width: 1024px) {
+    .app__navbar{
         .app__navbar-links {
             display: block;
             font-size: $--fs-body;
@@ -55,5 +61,5 @@
             letter-spacing: 0.1rem;
         }
     }
-    }
+}
     

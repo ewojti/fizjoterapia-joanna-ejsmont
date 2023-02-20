@@ -1,35 +1,82 @@
 @import "utilities/variables";
 
-.app__header{
+.app__header {
+  display: flex;
+  flex-direction: column;
+  column-gap: 1rem;
+  .app__header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 700px;
+    width: 100%;
+    padding: 1rem 2rem;
+    h1,
+    h3,
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+  .app__header-img {
+    width: 100%;
+    height: 480px;
+    img {
+      object-fit: cover;
+      object-position: top;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .app__header {
     height: 700px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    .app__header-text{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-         align-items: flex-start;
-        width: 40%;
-        h1, h3, p{
-            margin-bottom: 1rem;
-        }
-        h3{
-            color: $--clr-green;
-            font-weight: $--fw-bold;
-        }
+    .app__header-text {
+      position: relative;
+      padding: 2rem 0 2rem 4rem;
+      h1,
+      h3,
+      p {
+        margin-bottom: 1rem;
+      }
     }
-    .app__header-img{
-        position: relative;
-        left: 6rem;
-        bottom: 4rem;
-        height: 700px;
-        img{
-            max-width: 900px;
-            width: 100%;
-            object-fit: cover;
-            height: 100%;
-            clip-path: polygon(0 0, 100% 0%, 100% 100%, 30% 100%);
+    .app__header-img {
+      width: 100%;
+      height: 700px;
+      img {
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 30% 100%);
+      }
+    }
+  }
+}
 
-        }
+@media screen and (min-width: 1024px) {
+  .app__header {
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .app__header-text {
+      padding: 4rem 0 4rem 6rem;
     }
+    .app__header-img {
+      height: 700px;
+      .app__header-img-desktop {
+        display: block;
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+        height: 100%;
+      }
+      .app__header-img-mobile {
+        display: none;
+      }
+    }
+  }
 }

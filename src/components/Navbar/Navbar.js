@@ -7,12 +7,20 @@ const Navbar = () => {
   return (
     <div className="app__navbar">
       <div className="app__navbar-logo">
-        <img className="app__navbar-logo-desktop" src={images.logo_header} alt="navbar logo fizjoterapia" />
-        <img className="app__navbar-logo-mobile" src={images.logo_footer} alt="navbar logo fizjoterapia" />
+        <img
+          className="app__navbar-logo-desktop"
+          src={images.logo_header}
+          alt="navbar logo fizjoterapia"
+        />
+        <img
+          className="app__navbar-logo-mobile"
+          src={images.logo_footer}
+          alt="navbar logo fizjoterapia"
+        />
       </div>
-      <div className="app__navbar-links p__inter">
-        <ul>
-          <li>
+      <div className="app__navbar-links p__cormorant">
+        <ul className="p__cormorant">
+          <li className="p__cormorant">
             <Link to="">O mnie</Link>
           </li>
           <li>

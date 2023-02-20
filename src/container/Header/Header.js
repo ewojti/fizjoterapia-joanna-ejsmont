@@ -4,7 +4,7 @@ import images from "../../constants/images";
 
 const Header = () => {
   return (
-    <div className="app__header section__padding">
+    <div className="app__header">
       <div className="app__header-text">
         <h1 className="app__heading-h1">Donec tempus eu felis in rhoncus</h1>
         <h3 className="app__heading-h3">Cras placerat ligula</h3>
@@ -17,7 +17,10 @@ const Header = () => {
         <button className="custom__button">Umów wizytę</button>
       </div>
       <div className="app__header-img">
-        <img src={images.header} alt='header fizjo' />
+        <img
+          src={images.header}
+          alt="header fizjo"
+        />
       </div>
     </div>
   );

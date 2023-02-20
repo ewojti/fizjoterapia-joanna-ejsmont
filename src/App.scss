@@ -84,7 +84,8 @@ body {
 .app__heading-h3 {
   font-family: $--ff-cormorant;
   font-size: $--fs-h3;
-  font-weight: $--fw-regular;
+  font-weight: $--fw-bold;
+  color: $--clr-green;
 }
 
 .custom__button {
@@ -115,14 +116,12 @@ body {
 }
 
 .p__cormorant {
-  font-family: var(--font-base);
-  color: var(--color-white);
-  font-weight: 700;
+  font-family: $--ff-cormorant;
+  color: $--clr-grey;
+  font-weight: $--fw-semiBold;
   letter-spacing: 0.04em;
-  text-transform: capitalize;
-  font-feature-settings: "tnum" on, "lnum" on;
-  line-height: 29.9px;
-  font-size: 23px;
+  // text-transform: capitalize;
+  font-size: $--fs-h3;
 }
 
 .p__inter {
@@ -149,7 +148,7 @@ body {
 
 @media screen and (min-width: 850px) {
   .section__padding {
-    padding: 4rem 3rem;
+    padding: 4rem 2rem;
   }
 }
 
