@@ -12,9 +12,9 @@ const Home = () => {
       <Header />
       <Services />
       <AboutMe />
-      {/* <Separator />
+      <Separator />
       <Blog />
-      <Contact /> */}
+      <Contact />
     </div>
   );
 }
