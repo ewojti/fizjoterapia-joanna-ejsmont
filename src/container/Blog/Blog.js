@@ -7,9 +7,9 @@ const Blog = () => {
     <div className="app__blog section__padding">
       <div className="app__blog-title">
         <h1 className="app__heading-h1">Mój Blog</h1>
-        <button className="app__blog-button p__inter">
-          Zobacz wszystkie posty
-        </button>
+        <h3 className="app__blog-title-last-posts app__heading-h3">
+          Ostatnio dodane posty...
+        </h3>
       </div>
       <div className="app__blog-posts">
         {blogData.map((post) => (
@@ -22,11 +22,14 @@ const Blog = () => {
               <p>{post.description}</p>
             </div>
             <div className="app__blog-post-read">
-              <a href="blank">Przeczytaj</a>
+              <a href="blank">Przeczytaj wpis</a>
             </div>
           </div>
         ))}
       </div>
+      <button className="app__blog-button p__inter">
+        Zobacz wszystkie posty
+      </button>
     </div>
   );
 };
