@@ -17,14 +17,17 @@ body {
 }
 
 .app__bg-separator {
-  background-image: url("./assets/cwiczenia.jpg");
-  background-color: $--clr-black;
+  background-image: url("./assets/headerMob.jpg");
   opacity: 0.5;
-  background-position: top;
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 350px;
+  height: 400px;
+}
+@media screen and (min-width: 768px){
+  .app__bg-separator{
+  background-image: url("./assets/cwiczenia.jpg");
+  }
 }
 
 .app__wrapper {
