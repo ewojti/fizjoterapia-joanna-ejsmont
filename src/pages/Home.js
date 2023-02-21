@@ -12,8 +12,8 @@ const Home = () => {
       <Header />
       <Services />
       <AboutMe />
-      {/* <Separator />
-      <Blog /> */}
+      <Separator />
+      <Blog />
       <Contact />
     </div>
   );
