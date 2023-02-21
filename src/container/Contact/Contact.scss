@@ -23,7 +23,7 @@
     h1 {
           border-bottom: 1px solid;
     border-image: linear-gradient(to left, #676767, #d3d4d4) 1;
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
     }
     .app__contact-info-items{
       align-items: center;
@@ -31,9 +31,10 @@
       display: flex;
       flex-direction: column;
       li{
+        height: 2.5rem;
         display: flex;
+        margin-bottom: 3rem;
         align-items: center;
-        margin-bottom: 2rem;
         
         span {
           margin-right: 2rem;
