@@ -22,12 +22,12 @@
     display: flex;
     margin: 2rem 0;
     flex-wrap: wrap;
-    gap: 3rem;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 2rem;
     align-items: stretch;
     .app__blog-post {
       text-align: justify;
-      max-width: 300px;
+      max-width: 340px;
       width: 100%;
       padding: 1rem 2rem;
       height: auto;
