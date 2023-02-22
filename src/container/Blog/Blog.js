@@ -3,6 +3,7 @@ import "./Blog.scss";
 import blogData from "../../constants/blogData";
 
 const Blog = () => {
+  const threeLastPost = blogData.slice(0, 3)
   return (
     <div className="app__blog section__padding">
       <div className="app__blog-title">
@@ -12,7 +13,7 @@ const Blog = () => {
         </h3>
       </div>
       <div className="app__blog-posts">
-        {blogData.map((post) => (
+        {threeLastPost.map((post) => (
           <div className="app__blog-post">
             <div className="app__blog-post-text">
               <div className="app__blog-post-date">
