@@ -8,7 +8,7 @@ import Contact from '../container/Contact/Contact'
 
 const Home = () => {
   return (
-    <div>
+    <div id='home'>
       <Header />
       <Services />
       <AboutMe />

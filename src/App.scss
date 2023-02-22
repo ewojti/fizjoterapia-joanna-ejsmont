@@ -5,7 +5,7 @@ body {
   font-family: $--ff-inter;
   background-color: var($--clr-light);
 }
-html{
+html {
   height: 100%;
 }
 
@@ -19,7 +19,7 @@ html{
   align-items: center;
 }
 
-.app__page{
+.app__page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -33,9 +33,9 @@ html{
   background-attachment: fixed;
   height: 400px;
 }
-@media screen and (min-width: 768px){
-  .app__bg-separator{
-  background-image: url("./assets/cwiczenia.jpg");
+@media screen and (min-width: 768px) {
+  .app__bg-separator {
+    background-image: url("./assets/cwiczenia.jpg");
   }
 }
 
@@ -118,6 +118,8 @@ html{
 .policy__link {
   font-size: 0.6rem;
   color: $--clr-grey;
+  display: flex;
+  gap: 0.2rem;
 }
 
 @mixin gradient($color_first, $color_second) {

@@ -1,18 +1,51 @@
 @import "utilities/variables";
 
-  .app__footer {
-    margin-top: auto;
-    background-color: $--clr-black;
-    color: $--clr-light;
-    padding: 2rem 6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  text-align: center;
+.app__footer {
+  margin-top: auto;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $--clr-black;
+  color: $--clr-light;
+  padding: 0.5rem 11rem;
+  align-items: center;
+  cursor: pointer;
   .app__footer-logo {
+    align-self: center;
     background-color: $--clr-black;
     img {
       max-width: 50px;
     }
   }
+  .app__footer-copyright {
+    align-self: center;
+    order: 1;
+    text-align: center;
+  }
+  .app__react-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: $--clr-light;
+    a{
+      border-bottom: 2px solid;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .app__footer {
+  height: 80px;
+  flex-direction: row;
+  .app__footer-logo {
+    align-self: center;
+    background-color: $--clr-black;
+  }
+  .app__footer-copyright {
+    align-self: flex-end;
+    order: 0;
+  }
+
+}
 }
