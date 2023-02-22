@@ -1,5 +1,6 @@
 import aboutme from "../assets/aboutme.jpg";
 import header from "../assets/header.jpg";
+import blog from "../assets/blog.jpg";
 import headerMob from "../assets/headerMob.jpg";
 import stopy from "../assets/stopy.jpg";
 import cwiczenia from "../assets/cwiczenia.jpg";
@@ -16,6 +17,7 @@ import rehabilitation from "../assets/rehabilitation.png"
 import wrist from "../assets/wrist.png"
 
 export default {
+  blog,
   cwiczenia,
   aboutme,
   header,

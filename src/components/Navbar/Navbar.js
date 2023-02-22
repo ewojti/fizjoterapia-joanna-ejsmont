@@ -27,13 +27,13 @@ const Navbar = () => {
             <Link to="">Usługi</Link>
           </li>
           <li>
-            <Link to="">Blog</Link>
+            <Link to="./blog">Blog</Link>
           </li>
           <li>
             <Link to="">Kontakt</Link>
           </li>
           <li>
-            <Link to="">Cennik</Link>
+            <Link to="./cennik">Cennik</Link>
           </li>
         </ul>
       </div>

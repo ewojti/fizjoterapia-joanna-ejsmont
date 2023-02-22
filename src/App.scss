@@ -5,6 +5,9 @@ body {
   font-family: $--ff-inter;
   background-color: var($--clr-light);
 }
+html{
+  height: 100%;
+}
 
 .section__padding {
   padding: 2rem 2rem;
@@ -14,6 +17,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.app__page{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .app__bg-separator {
@@ -130,7 +139,7 @@ body {
   font-weight: $--fw-light;
   text-transform: capitalize;
   line-height: 28px;
-  font-size: 16px;
+  font-size: $--fs-body;
 }
 .p__inter {
   font-family: $--ff-inter;

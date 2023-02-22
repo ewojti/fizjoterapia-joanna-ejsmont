@@ -1,0 +1,42 @@
+@import "utilities/variables";
+
+.app__pricelist {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  .app__pricelist-list {
+    padding: 2rem 4rem;
+    max-width: 800px;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 13px -7px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 13px -7px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 13px -7px rgba(66, 68, 90, 1);
+    h1 {
+      margin-bottom: 0.8rem;
+    }
+    ul {
+      list-style-type: "\2192";
+      list-style-image: $--clr-green;
+      letter-spacing: 0.08rem;
+      padding-left: 1rem;
+      li {
+        color: $--clr-green;
+        margin-bottom: 1.1rem;
+        margin-left: 1rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        p{
+            color: $--clr-black;
+            margin-left: 1rem;
+            span{
+                font-weight: $--fw-bold;
+                font-size: $--fs-h2;
+                color: $--clr-green;
+                margin-left: 1rem;
+            }
+        }
+      }
+    }
+  }
+}

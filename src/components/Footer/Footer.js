@@ -6,7 +6,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="app__footer section__padding">
+    <footer className="app__footer section__padding">
       <div>
         <div className="app__footer-logo">
           <img src={images.logo_footer} alt="navbar logo fizjoterapia" />
@@ -25,7 +25,7 @@ const Footer = () => {
         </a>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 

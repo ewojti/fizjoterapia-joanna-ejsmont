@@ -1,12 +1,10 @@
 import React from 'react';
-import Navbar from '../components/Navbar/Navbar'
-import Footer from '../components/Footer/Footer'
+import PriceList from '../container/PriceList/PriceList';
 
 const PricingDetails = () => {
   return (
-    <div>
-      <Navbar/> 
-      <Footer />
+    <div id='cennik'>
+      <PriceList />
     </div>
   )
 }
