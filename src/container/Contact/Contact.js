@@ -8,7 +8,7 @@ import { MdPayment } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <div className="app__contact section__padding">
+    <div id='kontakt' className="app__contact section__padding">
       <div className="app__contact-info">
         <div>
           <h1 className="app__heading-h1">Kontakt</h1>

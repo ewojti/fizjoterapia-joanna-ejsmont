@@ -4,7 +4,7 @@ import images from '../../constants/images'
 
 const AboutMe = () => {
   return (
-    <div className="app__aboutme section__padding">
+    <div id='omnie' className="app__aboutme section__padding">
       <div className="app__aboutme-img">
         <img src={images.aboutme} alt="" />
       </div>

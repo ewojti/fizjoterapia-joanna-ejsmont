@@ -4,7 +4,7 @@ import './Services.scss'
 
 const Services = () => {
   return (
-    <div className="app__services section__padding">
+    <div id='uslugi' className="app__services section__padding">
       <div className="app__border-section"></div>
       <h1 className="app__heading-h1">W czym mogę Ci pomóc?</h1>
       <div className="app__services-list">
