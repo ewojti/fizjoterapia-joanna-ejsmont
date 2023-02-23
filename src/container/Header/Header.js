@@ -18,7 +18,13 @@ const Header = () => {
       </div>
       <div className="app__header-img">
         <img
+          className="app__header-img-desktop"
           src={images.header}
+          alt="header fizjo"
+        />
+        <img
+          className="app__header-img-mobile"
+          src={images.headerBalanc}
           alt="header fizjo"
         />
       </div>
