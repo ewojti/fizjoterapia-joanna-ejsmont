@@ -6,15 +6,20 @@ const Header = () => {
   return (
     <div className="app__header">
       <div className="app__header-text">
-        <h1 className="app__heading-h1">Donec tempus eu felis in rhoncus</h1>
-        <h3 className="app__heading-h3">Cras placerat ligula</h3>
-        <p className="p__inter">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-          condimentum, ex at rutrum scelerisque, odio tellus sollicitudin nisi,
-          sed luctus turpis erat eu lectus. Donec tempus eu felis in rhoncus.
-          Proin tristique accumsan ligula et vulputate.
+        <h1 className="app__heading-h1">Dzień dobry!</h1>
+        <p className="p__lato">
+          "Miło mi powitać Państwa na stronie internetowej poświęconej
+          mojej praktyce fizjoterapii.<br /> 
+          Znajdziecie tu Państwo informacje na temat leczonych schorzeń oraz świadczonych usług.<br />
         </p>
-        <button className="custom__button">Umów wizytę</button>
+        <ul className="p__cormorant">
+          <li>
+            <span>793-183-080</span>
+          </li>
+          <li>
+            <span>Osiedle Centrum 21, 16-100 Sokółka</span>
+          </li>
+        </ul>
       </div>
       <div className="app__header-img">
         <img
