@@ -25,6 +25,15 @@ html {
   flex-direction: column;
 }
 
+.app__border-section {
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid;
+  border-image: linear-gradient(to right, #676767, #d3d4d4) 1;
+}
+
 .app__bg-separator {
   background-image: url("./assets/headerMob.jpg");
   opacity: 0.5;
@@ -60,7 +69,7 @@ html {
 .app__heading-h3 {
   font-family: $--ff-cormorant;
   font-size: $--fs-h3;
-  font-weight: $--fw-bold;
+  font-weight: $--fw-medium;
   color: $--clr-green;
 }
 
@@ -83,7 +92,6 @@ html {
 .policy__link {
   font-size: 0.6rem;
   color: $--clr-grey;
-  display: flex;
   gap: 0.2rem;
 }
 
@@ -120,8 +128,8 @@ html {
     font-size: $--fs-h3;
   }
   .p__lato {
-  font-size: $--fs-body;
-}
+    font-size: $--fs-body;
+  }
 }
 
 .headtext__cormorant {

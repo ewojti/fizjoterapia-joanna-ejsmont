@@ -6,13 +6,11 @@ import { FaFacebookSquare } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="app__footer section__padding">
-      <div className="app__footer-logo">
-        <a href="/">
-          <img src={images.logo_footer} alt="navbar logo fizjoterapia" />
-        </a>
-      </div>
       <div className="app__footer-copyright">
-        <div className="">Copyright © 2023 <br />Fizjoterapia Joanna Ejsmont</div>
+        <div className="app__footer-copyright-text">
+          Copyright © 2023 <br />
+          Fizjoterapia Joanna Ejsmont
+        </div>
         <div className="policy__link">
           Icons made by
           <a href="https://www.freepik.com" title="Freepik">
