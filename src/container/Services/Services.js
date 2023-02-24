@@ -4,7 +4,7 @@ import './Services.scss'
 
 const Services = () => {
   return (
-    <div id='uslugi' className="app__services section__padding">
+    <div id="uslugi" className="app__services section__padding">
       <div className="app__border-section"></div>
       <h1 className="app__heading-h1">W czym mogę Ci pomóc?</h1>
       <div className="app__services-list">
@@ -17,10 +17,10 @@ const Services = () => {
             />
             <div className="app__service-list-item-description">
               <h2 className="app__heading-h2">{service.title}</h2>
-              <ul className="p__cormorant">
+              <ul>
                 {service.types.map((type) => (
                   <li>
-                    <span>{type}</span>
+                    <span className="p__cormorant">{type}</span>
                   </li>
                 ))}
               </ul>
