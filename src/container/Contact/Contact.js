@@ -8,45 +8,43 @@ import { MdPayment } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <div id='kontakt' className="app__contact section__padding">
+    <div id="kontakt" className="app__contact section__padding">
       <div className="app__contact-info">
         <div>
           <h1 className="app__heading-h1">Kontakt</h1>
         </div>
-        <div className="app__contact-info-items">
-          <ul>
-            <li>
-              <span className="app__react-icons">
-                <ImLocation2 />
-              </span>
-              <p className="p__inter">
-                Osiedle Centrum 21,
-                <br /> 16-100 Sokółka
-                <br /> *wejście od strony parku
-              </p>
-            </li>
-            <li>
-              <span className="app__react-icons">
-                <HiPhone />
-              </span>
-              <p className="p__inter">793-183-080</p>
-            </li>
-            <li>
-              <span className="app__react-icons">
-                <RiTimeFill />
-              </span>
-              <p className="p__inter">
-                pon - pt: 8.00-18.00 <br />
-                sob: 8:00-14:00
-              </p>
-            </li>
-            <li>
-              <span className="app__react-icons">
-                <GrMail />
-              </span>
-              <p className="p__inter">fizjoterapia.ejsmont@gmail.com</p>
-            </li>
-          </ul>
+        <div className="app__contact-info-items p__lato">
+          <div className="app__contact-info-item">
+            <span className="app__react-icons">
+              <ImLocation2 />
+            </span>
+            <p>
+              Osiedle Centrum 21,
+              <br /> 16-100 Sokółka
+              <br /> <span>*wejście od strony parku</span>
+            </p>
+          </div>
+          <div className="app__contact-info-item">
+            <span className="app__react-icons">
+              <HiPhone />
+            </span>
+            <p>793-183-080</p>
+          </div>
+          <div className="app__contact-info-item">
+            <span className="app__react-icons">
+              <RiTimeFill />
+            </span>
+            <p>
+              pon - pt: 8.00 - 18.00 <br />
+              sob: 8:00 - 14:00
+            </p>
+          </div>
+          <div className="app__contact-info-item">
+            <span className="app__react-icons">
+              <GrMail />
+            </span>
+            <p>fizjoterapia.ejsmont@gmail.com</p>
+          </div>
         </div>
       </div>
       <div className="app__contact-map">
