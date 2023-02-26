@@ -1,15 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import images from "../../constants/images";
-import { FaFacebookSquare } from "react-icons/fa";
 
 const Navbar = () => {
-  
+  const [isActive, setActive] = useState(false)
+  const handleToggle = () => {
+    setActive(!isActive)
+  }
+
   return (
     <div className="app__navbar fixed-top">
       <div className="app__navbar-logo">
-        <Link>
+        <Link to="/">
           <img
             className="app__navbar-logo-desktop"
             src={images.logo_header}
@@ -17,18 +20,28 @@ const Navbar = () => {
           />
         </Link>
       </div>
-      <div className="app__navbar-links">
-        <ul className="p__cormorant">
+      <button
+        onClick={handleToggle}
+        className={`hamburger ${isActive ? "hamburger--active" : ""}`}
+      >
+        <span className="hamburger__box">
+          <span className="hamburger__inner"></span>
+        </span>
+      </button>
+      <div
+        className={`app__navbar-links ${
+          isActive ? "app__navbar-links--active" : ""
+        }`}
+      >
+        <ul className="p__cormorant" onClick={handleToggle}>
           <li>
-            <Link activeClass="active" to="/">
-              <a href="">Usługi</a>
-            </Link>
+            <a href="#uslugi">Usługi</a>
           </li>
           <li>
             <a href="#omnie">O mnie</a>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
+            <a href="#blog">Blog</a>
           </li>
           <li>
             <a href="#kontakt">Kontakt</a>
@@ -37,31 +50,6 @@ const Navbar = () => {
             <Link to="/cennik">Cennik</Link>
           </li>
         </ul>
-      </div>
-      <div className="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label className="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
-        <div className="menu__box">
-          <ul className="p__cormorant">
-            <li>
-              <a href="#uslugi">Usługi</a>
-            </li>
-            <li>
-              <a href="#omnie">O mnie</a>
-            </li>
-            <li>
-              <Link to="/blog">Blog</Link>
-            </li>
-            <li>
-              <a href="#kontakt">Kontakt</a>
-            </li>
-            <li>
-              <Link to="/cennik">Cennik</Link>
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
   );

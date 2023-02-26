@@ -5,7 +5,7 @@ import blogData from "../../constants/blogData";
 const Blog = () => {
   const threeLastPost = blogData.slice(0, 3)
   return (
-    <div className="app__blog section__padding">
+    <div id='blog' className="app__blog section__padding">
       <div className="app__blog-title">
         <h1 className="app__heading-h1">Mój Blog</h1>
         <h3 className="app__blog-title-last-posts app__heading-h3">
