@@ -16,6 +16,9 @@ const Header = () => {
           <button className="custom__button" >Umów wizytę</button>
           <button className="custom__button">Sprawdź ofertę</button>
         </div>
+        <div className="app__header-number">
+            
+        </div>
       </div>
       <div className="app__header-img">
         <img

@@ -24,7 +24,8 @@
     }
     .app__header-btn {
       display: flex;
-      flex-direction: column;
+      // flex-direction: column;
+      flex-wrap: wrap;
       gap: 1rem;
       margin-top: 1rem;
       button:first-child {
@@ -78,7 +79,7 @@
         margin-bottom: 1rem;
       }
       .app__header-btn {
-        flex-direction: row;
+        // flex-direction: row;
       }
     }
     .app__header-img {
