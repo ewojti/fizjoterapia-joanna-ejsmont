@@ -35,7 +35,7 @@ const services = [
     id: 4,
     title: "Fizjoterapia dzieci",
     icon: `${images.children}`,
-    types: ["badanie stóp", "wady postawy"],
+    types: ["badanie i terapia stóp m.in. stóp płasko-koślawych", "wady postawy u dzieci od 4 lat"],
   },
 ];
 
