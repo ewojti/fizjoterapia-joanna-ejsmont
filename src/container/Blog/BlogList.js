@@ -14,8 +14,8 @@ const BlogList = () => {
         {blogData.map((post) => (
           <div className="app__blogList-item">
             <Link to="/blog-post" state={{ from: post }}>
-              <h1>{post.title}</h1>
-              <h3>{post.date}</h3>
+              <h1 className="app__heading-h1-blog">{post.title}</h1>
+              <h3 className="app__heading-h3-blog">{post.date}</h3>
               <p className="p__lato">{post.description}</p>
             </Link>
           </div>

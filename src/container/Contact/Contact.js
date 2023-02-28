@@ -35,7 +35,7 @@ const Contact = () => {
               <RiTimeFill />
             </span>
             <p>
-              pon - pt: 8.00 - 18.00 <br />
+              pon - pt: 8.00 - 19.00 <br />
               sob: 8:00 - 14:00
             </p>
           </div>

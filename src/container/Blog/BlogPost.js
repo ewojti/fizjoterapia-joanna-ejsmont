@@ -6,20 +6,13 @@ import NavigateBtn from "../../components/NavigateBtn/NavigateBtn";
 const BlogPost = () => {
   const location = useLocation();
   const { from } = location.state;
-  // 	const navigate = useNavigate();
-  // const goBack = () => {
-  // 	navigate(-1);
-  // }
   return (
     <div className="app__blogPage section__padding">
-      {/* <button className="custom__button" onClick={goBack}>
-        wróć
-      </button> */}
       <NavigateBtn />
       <BlogHead />
-      <h1 className="app__heading-h1">{from.title}</h1>
-      <h3 className="app__heading-h3">{from.description}</h3>
-      <p className="p__lato">{from.date}</p>
+      <h1 className="app__heading-h1-blog">{from.title}</h1>
+      <h2 className="app__heading-h2-blog">{from.description}</h2>
+      <h3 className="app__heading-h3-blog">{from.date}</h3>
       <p className="p__lato">{from.text}</p>
     </div>
   );

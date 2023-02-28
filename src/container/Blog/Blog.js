@@ -38,9 +38,11 @@ const Blog = () => {
           </div>
         ))}
       </div>
-      <button className="app__blog-button p__inter">
-        <a href="/blog">Zobacz wszystkie posty</a>
+        <Link to="/blog" className="app__blog-button-link">
+      <button className="app__blog-button p__cormorant">
+          Zobacz wszystkie posty
       </button>
+        </Link>
     </div>
   );
 };

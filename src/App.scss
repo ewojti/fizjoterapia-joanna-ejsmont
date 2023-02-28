@@ -73,11 +73,23 @@ html {
   font-weight: $--fw-medium;
   color: $--clr-green;
 }
+.app__heading-h1-blog {
+  font-weight: $--fw-bold;
+  margin-bottom: 0.5rem;
+}
+.app__heading-h2-blog {
+  font-weight: $--fw-semiBold;
+  margin-bottom: 0.5rem;
+}
+.app__heading-h3-blog {
+  margin-bottom: 1rem;
+  font-weight: $--fw-semiBold;
+}
 .app__home {
   scroll-snap-type: y mandatory;
 }
 
-.app__blogPage{
+.app__blogPage {
   font-family: $--ff-lato;
   display: flex;
   flex-direction: column;
