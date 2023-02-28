@@ -1,42 +1,93 @@
 @import "utilities/variables";
-
-.app__pricelist {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-  .app__pricelist-list {
-    padding: 2rem 4rem;
-    max-width: 800px;
+.app__pricelist-link {
+  cursor: pointer;
+}
+.app__pricelist-modal,
+.modal-overlay {
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  .app__pricelist-modal-content {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $--clr-light;
+    justify-content: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
     width: 100%;
-    -webkit-box-shadow: 0px 0px 13px -7px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 0px 13px -7px rgba(66, 68, 90, 1);
-    box-shadow: 0px 0px 13px -7px rgba(66, 68, 90, 1);
     h1 {
       margin-bottom: 0.8rem;
+      text-align: center;
     }
     ul {
-      list-style-type: "\2192";
-      list-style-image: $--clr-green;
-      letter-spacing: 0.08rem;
-      padding-left: 1rem;
+      list-style-type: none;
       li {
         color: $--clr-green;
-        margin-bottom: 1.1rem;
-        margin-left: 1rem;
-        &:last-child {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+        display: flex;
+        p {
+          margin-bottom: 1.1rem;
+          margin-left: 1rem;
+          color: $--clr-black;
+          margin-left: 1rem;
+          &:last-child {
             margin-bottom: 0;
-        }
-        p{
-            color: $--clr-black;
+          }
+          span {
+            font-weight: $--fw-bold;
+            color: $--clr-green;
             margin-left: 1rem;
-            span{
-                font-weight: $--fw-bold;
-                font-size: $--fs-h2;
-                color: $--clr-green;
-                margin-left: 1rem;
-            }
+          }
         }
       }
+    }
+    .modal-close {
+      margin-top: 1rem;
+      align-self: center;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .app__pricelist-modal {
+    .app__pricelist-modal-content {
+      padding: 2rem;
+      max-width: 470px;
+      width: 100%;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .app__pricelist-modal {
+    .app__pricelist-modal-content {
+      padding: 2rem;
+      max-width: 690px;
+      width: 100%;
+      ul {
+        li {
+        font-size: 2.3rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .app__pricelist-modal {
+    .app__pricelist-modal-content {
+      padding: 3rem;
+      max-width: 900px;
+      width: 100%;
     }
   }
 }

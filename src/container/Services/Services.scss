@@ -35,9 +35,9 @@
         gap: 1rem;
         ul {
           list-style-type: "\2192";
+          list-style-position: outside;
           letter-spacing: 0.08rem;
           padding-left: 2rem;
-          list-style-position: outside;
           li {
             color: $--clr-green;
             margin-bottom: 1.1rem;

@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import PriceList from "../../container/PriceList/PriceList";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import images from "../../constants/images";
@@ -45,9 +46,6 @@ const Navbar = () => {
           </li>
           <li>
             <a href="#kontakt">Kontakt</a>
-          </li>
-          <li>
-            <Link to="/cennik">Cennik</Link>
           </li>
         </ul>
       </div>

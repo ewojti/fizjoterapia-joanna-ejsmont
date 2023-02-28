@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.scss";
+import PriceList from "../PriceList/PriceList";
 import images from "../../constants/images";
 
 const Header = () => {
@@ -13,12 +14,11 @@ const Header = () => {
           Tu pozbędziesz się bólu i odzyskasz sprawność
         </h3>
         <div className="app__header-btn">
-          <button className="custom__button" >Umów wizytę</button>
-          <button className="custom__button">Sprawdź ofertę</button>
+        <button className="custom__button">Umów wizytę</button>
+        <PriceList />
+          
         </div>
-        <div className="app__header-number">
-            
-        </div>
+        <div className="app__header-number"></div>
       </div>
       <div className="app__header-img">
         <img
