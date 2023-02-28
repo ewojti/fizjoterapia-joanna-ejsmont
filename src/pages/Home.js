@@ -5,16 +5,20 @@ import Separator from '../container/Separator/Separator'
 import Blog from '../container/Blog/Blog'
 import Services from '../container/Services/Services'
 import Contact from '../container/Contact/Contact'
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   return (
-    <div id='home' className='app__home'>
+    <div id="home" className="app__home">
+      <Navbar />
       <Header />
       <Services />
       <AboutMe />
       <Separator />
       <Blog />
       <Contact />
+      <Footer />
     </div>
   );
 }
