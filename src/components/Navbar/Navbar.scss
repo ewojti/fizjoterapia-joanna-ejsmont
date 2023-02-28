@@ -183,9 +183,6 @@
         li:hover::after {
           width: 100%;
         }
-        li:hover:nth(5)::after{
-            width: 0;
-        }
       }
       .app__navbar-icon{
         font-size: 2rem;

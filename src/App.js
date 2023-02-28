@@ -4,6 +4,7 @@ import "./App.scss";
 import Home from "./pages/Home";
 import PricingDetails from "./pages/PricingDetails";
 import BlogPage from "./pages/BlogPage";
+import BlogPost from "./pages/BlogPost";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/cennik" element={<PricingDetails />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog-post" element={<BlogPost />} />
       </Routes>
       <Footer />
     </div>
