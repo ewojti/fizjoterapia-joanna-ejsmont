@@ -77,6 +77,15 @@ html {
   scroll-snap-type: y mandatory;
 }
 
+.app__blogPage{
+  font-family: $--ff-lato;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
 .custom__button {
   background: #0f8a70;
   color: $--clr-light;

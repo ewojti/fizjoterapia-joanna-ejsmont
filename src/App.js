@@ -4,7 +4,7 @@ import "./App.scss";
 import Home from "./pages/Home";
 import PricingDetails from "./pages/PricingDetails";
 import BlogPage from "./pages/BlogPage";
-import BlogPost from "./pages/BlogPost";
+import BlogPagePost from "./pages/BlogPagePost";
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/cennik" element={<PricingDetails />} />
         <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blog-post" element={<BlogPost />} />
+        <Route path="/blog-post" element={<BlogPagePost />} />
       </Routes>
     </div>
   );
