@@ -41,15 +41,21 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: top 90px right;
   height: 400px;
 }
 
-.modal-overlay {
-  background: rgba(49, 49, 49, 0.8);
-}
 @media screen and (min-width: 768px) {
   .app__bg-separator {
     background-image: url("./assets/cwiczenia.jpg");
+    background-position: top 20px right;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .app__bg-separator {
+    background-image: url("./assets/cwiczenia.jpg");
+    background-position: none;
   }
 }
 
@@ -100,6 +106,10 @@ html {
   margin: 0 auto;
   max-width: 1000px;
   width: 100%;
+}
+
+.modal-overlay {
+  background: rgba(49, 49, 49, 0.8);
 }
 
 .app__modal,
@@ -204,13 +214,13 @@ html {
 
 @media screen and (min-width: 768px) {
   .app__heading-h2 {
-  font-family: $--ff-cormorant;
-  font-size: $--fs-h2;
-  font-weight: $--fw-regular;
-  background: -webkit-radial-gradient(#676767, #d3d4d4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+    font-family: $--ff-cormorant;
+    font-size: $--fs-h2;
+    font-weight: $--fw-regular;
+    background: -webkit-radial-gradient(#676767, #d3d4d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   .p__cormorant {
     font-size: $--fs-body;
   }
