@@ -102,6 +102,55 @@ html {
   width: 100%;
 }
 
+.app__modal,
+.modal-overlay {
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.app__modal-content {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $--clr-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .app__modal-content {
+    max-width: 470px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .app__modal-content {
+    max-width: 690px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .app__modal-content {
+    max-width: 1000px;
+    width: 100%;
+  }
+}
+
 .custom__button {
   background: #0f8a70;
   color: $--clr-light;
@@ -155,7 +204,7 @@ html {
 
 @media screen and (min-width: 768px) {
   .p__cormorant {
-    font-size: $--fs-h3;
+    font-size: $--fs-body;
   }
   .p__lato {
     font-size: $--fs-body;
@@ -178,7 +227,7 @@ html {
 
 @media screen and (min-width: 768px) {
   .section__padding {
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
   }
 }
 
