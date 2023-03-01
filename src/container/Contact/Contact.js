@@ -4,7 +4,6 @@ import { GrMail } from "react-icons/gr";
 import { HiPhone } from "react-icons/hi";
 import { ImLocation2 } from "react-icons/im";
 import { RiTimeFill } from "react-icons/ri";
-import { MdPayment } from "react-icons/md";
 
 const Contact = () => {
   return (
