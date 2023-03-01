@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./PriceList.scss";
 import priceData from "../../constants/priceData";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 const PriceList = () => {
   const [modal, setModal] = useState(false);
+    useEffect(() => {
+      Aos.init({});
+    }, []);
 
   const toggleModal = () => {
     setModal(!modal);
@@ -13,6 +18,8 @@ const PriceList = () => {
     <>
       <button
         className="custom__button"
+        data-aos="fade-up"
+        data-aos-delay="3000"
         onClick={toggleModal}
       >
         Sprawdź cennik

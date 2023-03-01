@@ -22,9 +22,28 @@
       margin-bottom: 1rem;
       font-style: italic;
     }
+    .app__header-contact {
+      display: flex;
+      flex-direction: column;
+      margin: 2rem 0;
+      gap: 2rem;
+      .app__header-info-item {
+        display: flex;
+        height: 32px;
+        span {
+          margin-right: 1.5rem;
+          height: 2rem;
+        }
+        p {
+          align-self: center;
+          color: $--clr-grey;
+          font-size: 2rem;
+          line-height: 2.3rem;
+        }
+      }
+    }
     .app__header-btn {
       display: flex;
-      // flex-direction: column;
       flex-wrap: wrap;
       gap: 1rem;
       margin-top: 1rem;
@@ -77,9 +96,6 @@
       padding: 2rem 0 2rem 2rem;
       h3 {
         margin-bottom: 1rem;
-      }
-      .app__header-btn {
-        // flex-direction: row;
       }
     }
     .app__header-img {
