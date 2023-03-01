@@ -10,8 +10,11 @@ const Services = () => {
       }, []);
   return (
     <div id="uslugi" className="app__services section__padding">
-      <div className="app__border-section" data-aos="fade-right"></div>
-      <h1 className="app__heading-h1" data-aos="fade-down">
+      <div
+        className="app__border-section"
+        data-aos="fade-out"
+      ></div>
+      <h1 className="app__heading-h1" data-aos="fade-right">
         W czym mogę Ci pomóc?
       </h1>
       <div className="app__services-list">
@@ -21,18 +24,15 @@ const Services = () => {
             key={service.id}
             id={service.id}
             data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
           >
             <img
               className="app__service-icon"
               src={service.icon}
               alt="fizjoterapia rehabilitacja"
-              data-aos="fade-right"
-              data-aos-delay="200"
             />
             <div
               className="app__service-list-item-description"
-              data-aos="fade-right"
-              data-aos-delay="200"
             >
               <h2 className="app__heading-h2">{service.title}</h2>
               <ul>

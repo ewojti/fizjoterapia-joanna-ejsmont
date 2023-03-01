@@ -64,7 +64,7 @@ html {
 
 .app__heading-h2 {
   font-family: $--ff-cormorant;
-  font-size: $--fs-h2;
+  font-size: $--fs-h2-mobile;
   font-weight: $--fw-regular;
   background: -webkit-radial-gradient(#676767, #d3d4d4);
   -webkit-background-clip: text;
@@ -203,6 +203,14 @@ html {
 }
 
 @media screen and (min-width: 768px) {
+  .app__heading-h2 {
+  font-family: $--ff-cormorant;
+  font-size: $--fs-h2;
+  font-weight: $--fw-regular;
+  background: -webkit-radial-gradient(#676767, #d3d4d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
   .p__cormorant {
     font-size: $--fs-body;
   }
