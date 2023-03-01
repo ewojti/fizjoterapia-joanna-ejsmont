@@ -6,6 +6,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="app__footer section__padding">
+      <div className="app__border-section"></div>
       <div className="app__footer-copyright">
         <div className="app__footer-copyright-text">
           Copyright © 2023 <br />
@@ -21,12 +22,6 @@ const Footer = () => {
             www.flaticon.com
           </a>
         </div>
-      </div>
-      <div className="app__react-icons">
-        <FaFacebookSquare />
-        <a href="/blog" className="app__link">
-          BLOG
-        </a>
       </div>
     </div>
   );
