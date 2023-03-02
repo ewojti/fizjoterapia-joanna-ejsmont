@@ -1,7 +1,5 @@
 import React from "react";
 import "./Footer.scss";
-import images from "../../constants/images";
-import { FaFacebookSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (

@@ -16,6 +16,7 @@ import mother from "../assets/mother.png"
 import muscle_pain from "../assets/muscle_pain.png"
 import rehabilitation from "../assets/rehabilitation.png"
 import wrist from "../assets/wrist.png"
+import facebook from "../assets/facebook.png";
 
 export default {
   blog,
@@ -36,4 +37,5 @@ export default {
   muscle_pain,
   rehabilitation,
   wrist,
+  facebook
 };
