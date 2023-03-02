@@ -23,7 +23,7 @@ const Header = () => {
         </h1>
         <h3
           className="app__heading-h3"
-          data-aos="fade-down"
+          data-aos="fade-in"
           data-aos-delay="2000"
         >
           Tu pozbędziesz się bólu i odzyskasz sprawność
@@ -31,7 +31,7 @@ const Header = () => {
         <div className="app__header-contact">
           <div
             className="app__header-info-item"
-            data-aos="fade-right"
+            data-aos="fade-in"
             data-aos-delay="2500"
           >
             <span className="app__react-icons">
@@ -41,7 +41,7 @@ const Header = () => {
           </div>
           <div
             className="app__header-info-item"
-            data-aos="fade-right"
+            data-aos="fade-in"
             data-aos-delay="2500"
           >
             <span className="app__react-icons">
@@ -54,7 +54,7 @@ const Header = () => {
           <button
             className="custom__button"
             data-aos="fade-up"
-            data-aos-delay="2700"
+            data-aos-delay="1200"
           >
             <a href="tel:793183080">Umów wizytę</a>
           </button>
@@ -64,8 +64,8 @@ const Header = () => {
       </div>
       <div
         className="app__header-img"
-        data-aos="fade-down"
-        data-aos-duration="2000"
+        data-aos="fade-out"
+        data-aos-duration="1800"
       >
         <img
           className="app__header-img-desktop"

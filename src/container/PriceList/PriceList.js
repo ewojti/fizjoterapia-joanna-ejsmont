@@ -19,7 +19,7 @@ const PriceList = () => {
       <button
         className="custom__button"
         data-aos="fade-up"
-        data-aos-delay="3000"
+        data-aos-delay="1200"
         onClick={toggleModal}
       >
         Sprawdź cennik
