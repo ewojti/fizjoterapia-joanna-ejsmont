@@ -19,8 +19,8 @@ const priceData = [
   },
   {
     id: 4,
-    name: "Rehabilitacja domowa/Powyżej 10km",
-    cost: "- 100 zł/120 zł",
+    name: "Rehabilitacja domowa",
+    cost: "- 120 zł",
     time: '- 1h'
   },
   {

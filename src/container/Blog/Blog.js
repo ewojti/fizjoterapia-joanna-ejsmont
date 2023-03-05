@@ -15,7 +15,7 @@ const Blog = () => {
       </div>
       <div className="app__blog-posts">
         {threeLastPost.map((post) => (
-          <div className="app__blog-post">
+          <div className="app__blog-post" key={post.id.toString()}>
             <div className="app__blog-post-head">
               <span className="overlay"></span>
               <div className="app__blog-post-date">
